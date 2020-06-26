@@ -34,7 +34,8 @@ class java_1 {
 					TimeUnit.SECONDS.sleep(1);
 					b++;
 				} 
-			}else {
+			}
+			if(choice==2) {
 				TimeUnit.SECONDS.sleep(1);
 				System.out.println("하..어이가없네 가방속에 있는 물을 보고 구해줬는데");
 				TimeUnit.SECONDS.sleep(1);
@@ -49,6 +50,12 @@ class java_1 {
 					TimeUnit.SECONDS.sleep(1);
 					b++;
 				}
+			}
+			if(choice>=3) {
+				TimeUnit.SECONDS.sleep(1);
+				System.out.println("선택지만 선택해 주세요");
+				TimeUnit.SECONDS.sleep(1);
+				return;
 			}
 		}catch(InterruptedException ex){
 		}
