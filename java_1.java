@@ -2,105 +2,55 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 class java_1 {
 	public static void main(String args[]) {
-		Scanner sc = new Scanner(System.in);
-		System.out.println("°ÔÀÓÀÌ ½ÃÀÛ µË´Ï´Ù.");
 		try{
+			Scanner sc = new Scanner(System.in);
+			System.out.println("ê²Œì„ì´ ì‹œì‘ ë©ë‹ˆë‹¤.");
 			TimeUnit.SECONDS.sleep(1);
-		}catch(InterruptedException e){
-			System.out.println(e.getMessage());
-		}
-		System.out.println("´ç½ÅÀÇ ÀÌ¸§Àº?");
-		try{
+			System.out.println("ë‹¹ì‹ ì˜ ì´ë¦„ì€?");
 			TimeUnit.SECONDS.sleep(1);
-		}catch(InterruptedException e){
-			System.out.println(e.getMessage());
-		}
-		String name = sc.nextLine();
-		System.out.println("±×·±°¡¿ä " + name + " ±×°ÍÀÌ ´ç½ÅÀÇ ÀÌ¸§ ÀÎ°¡¿ä");
-		try{
+			String name = sc.nextLine();
+			System.out.println("ê·¸ëŸ°ê°€ìš” " + name + " ê·¸ê²ƒì´ ë‹¹ì‹ ì˜ ì´ë¦„ ì¸ê°€ìš”");
 			TimeUnit.SECONDS.sleep(1);
-		}catch(InterruptedException e){
-			System.out.println(e.getMessage());
-		}
 		
-		System.out.println("Áö±İ ¼¼»óÀÌ Á»ºñ¼¼»óÀ¸·Î º¯Çß¾î¿ä Àú¶û °°ÀÌ ´Ù´Ò±î¿ä?");
-		try{
+			System.out.println("ì§€ê¸ˆ ì„¸ìƒì´ ì¢€ë¹„ì„¸ìƒìœ¼ë¡œ ë³€í–ˆì–´ìš” ì €ë‘ ê°™ì´ ë‹¤ë‹ê¹Œìš”?");
 			TimeUnit.SECONDS.sleep(1);
-		}catch(InterruptedException e){
-			System.out.println(e.getMessage());
-		}
 		
-		System.out.println("¼±ÅÃÁö1 : ³× °°ÀÌ °¡¿ä");
-		System.out.println("¼±ÅÃÁö2 : ¾Æ´Ï¿ä Àú È¥ÀÚ ´Ù´Ò·¡¿ä");
+			System.out.println("ì„ íƒì§€1 : ë„¤ ê°™ì´ ê°€ìš”");
+			System.out.println("ì„ íƒì§€2 : ì•„ë‹ˆìš” ì € í˜¼ì ë‹¤ë‹ë˜ìš”");
 		
-		int choice = sc.nextInt();
+			int choice = sc.nextInt();
 		
-		if(choice==1) {
-			System.out.println("¿À Çö¸íÇÑ ¼±ÅÃÀ» ÇÏ¼Ì±º¿ä ¾ÕÀ¸·Î ÀßÇØº¾½Ã´Ù.");
-			try{
+			if(choice==1) {
+				System.out.println("ì˜¤ í˜„ëª…í•œ ì„ íƒì„ í•˜ì…¨êµ°ìš” ì•ìœ¼ë¡œ ì˜í•´ë´…ì‹œë‹¤.");
 				TimeUnit.SECONDS.sleep(1);
-			}catch(InterruptedException e){
-				System.out.println(e.getMessage());
-			}
-			System.out.println("±×¸®°í °¡¹æ ¾È¿¡ ÀÖ´Â ¹°À» ³õ°í Á×À¸½ÃÁÒ¤¾¤¾");
-			try{
+				System.out.println("ê·¸ë¦¬ê³  ê°€ë°© ì•ˆì— ìˆëŠ” ë¬¼ì„ ë†“ê³  ì£½ìœ¼ì‹œì£ ã…ã…");
 				TimeUnit.SECONDS.sleep(1);
-			}catch(InterruptedException e){
-				System.out.println(e.getMessage());
-			}
-			System.out.println("½Ã½ºÅÛ : ´ç½ÅÀº Á×¾ú½À´Ï´Ù. ¼ıÀÚ°¡ 1000°¡ µÉ¶§±îÁö ±â´Ù¸®¼¼¿ä");
-			try{
-				TimeUnit.SECONDS.sleep(1);
-			}catch(InterruptedException e){
-				System.out.println(e.getMessage());
-			}	
-			int b = 1;
+				System.out.println("ì‹œìŠ¤í…œ : ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤. ìˆ«ìê°€ 1000ê°€ ë ë•Œê¹Œì§€ ê¸°ë‹¤ë¦¬ì„¸ìš”");
+				TimeUnit.SECONDS.sleep(1);	
+				int b = 1;
 			
-			while(b<=1000) {
-				System.out.println(b);
-				try{
+				while(b<=1000) {
+					System.out.println(b);
 					TimeUnit.SECONDS.sleep(1);
-				}catch(InterruptedException e){
-					System.out.println(e.getMessage());
-				}
-				b++;
-			} 
-		}else {
-			System.out.println("È¥ÀÚ ´Ù´Ï½Ã°Ú´Ù°í¿ä?");
-			try{
+					b++;
+				} 
+			}else {
 				TimeUnit.SECONDS.sleep(1);
-			}catch(InterruptedException e){
-				System.out.println(e.getMessage());
-			}
-			System.out.println("ÇÏ..¾îÀÌ°¡¾ø³× °¡¹æ¼Ó¿¡ ÀÖ´Â ¹°À» º¸°í ±¸ÇØÁá´Âµ¥");
-			try{
+				System.out.println("í•˜..ì–´ì´ê°€ì—†ë„¤ ê°€ë°©ì†ì— ìˆëŠ” ë¬¼ì„ ë³´ê³  êµ¬í•´ì¤¬ëŠ”ë°");
 				TimeUnit.SECONDS.sleep(1);
-			}catch(InterruptedException e){
-				System.out.println(e.getMessage());
-			}
-			System.out.println("±×³É Á×¾î¾ß°Ú´Ù");
-			try{
+				System.out.println("ê·¸ëƒ¥ ì£½ì–´ì•¼ê² ë‹¤");
 				TimeUnit.SECONDS.sleep(1);
-			}catch(InterruptedException e){
-				System.out.println(e.getMessage());
-			}
-			System.out.println("½Ã½ºÅÛ : ´ç½ÅÀº Á×¾ú½À´Ï´Ù. ¼ıÀÚ°¡ 1000°¡ µÉ¶§±îÁö ±â´Ù¸®¼¼¿ä");
-			try{
+				System.out.println("ì‹œìŠ¤í…œ : ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤. ìˆ«ìê°€ 1000ê°€ ë ë•Œê¹Œì§€ ê¸°ë‹¤ë¦¬ì„¸ìš”");
 				TimeUnit.SECONDS.sleep(1);
-			}catch(InterruptedException e){
-				System.out.println(e.getMessage());
-			}
-			int b = 1;
-			
-			while(b<=1000) {
-				System.out.println(b);
-				try{
+				int b = 1;
+				
+				while(b<=1000) {
+					System.out.println(b);
 					TimeUnit.SECONDS.sleep(1);
-				}catch(InterruptedException e){
-					System.out.println(e.getMessage());
+					b++;
 				}
-				b++;
 			}
+		}catch(InterruptedException ex){
 		}
 	}
 }
