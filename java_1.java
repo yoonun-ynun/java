@@ -4,28 +4,28 @@ class java_1 {
 	public static void main(String args[]) {
 		try{
 			Scanner sc = new Scanner(System.in);
-			System.out.println("ê²Œì„ì´ ì‹œì‘ ë©ë‹ˆë‹¤.");
+			System.out.println("°ÔÀÓÀÌ ½ÃÀÛ µË´Ï´Ù.");
 			TimeUnit.SECONDS.sleep(1);
-			System.out.println("ë‹¹ì‹ ì˜ ì´ë¦„ì€?");
+			System.out.println("´ç½ÅÀÇ ÀÌ¸§Àº?");
 			TimeUnit.SECONDS.sleep(1);
 			String name = sc.nextLine();
-			System.out.println("ê·¸ëŸ°ê°€ìš” " + name + " ê·¸ê²ƒì´ ë‹¹ì‹ ì˜ ì´ë¦„ ì¸ê°€ìš”");
+			System.out.println("±×·±°¡¿ä " + name + " ±×°ÍÀÌ ´ç½ÅÀÇ ÀÌ¸§ ÀÎ°¡¿ä");
 			TimeUnit.SECONDS.sleep(1);
 		
-			System.out.println("ì§€ê¸ˆ ì„¸ìƒì´ ì¢€ë¹„ì„¸ìƒìœ¼ë¡œ ë³€í–ˆì–´ìš” ì €ë‘ ê°™ì´ ë‹¤ë‹ê¹Œìš”?");
+			System.out.println("Áö±İ ¼¼»óÀÌ Á»ºñ¼¼»óÀ¸·Î º¯Çß¾î¿ä Àú¶û °°ÀÌ ´Ù´Ò±î¿ä?");
 			TimeUnit.SECONDS.sleep(1);
 		
-			System.out.println("ì„ íƒì§€1 : ë„¤ ê°™ì´ ê°€ìš”");
-			System.out.println("ì„ íƒì§€2 : ì•„ë‹ˆìš” ì € í˜¼ì ë‹¤ë‹ë˜ìš”");
+			System.out.println("¼±ÅÃÁö1 : ³× °°ÀÌ °¡¿ä");
+			System.out.println("¼±ÅÃÁö2 : ¾Æ´Ï¿ä Àú È¥ÀÚ ´Ù´Ò·¡¿ä");
 		
 			int choice = sc.nextInt();
 		
 			if(choice==1) {
-				System.out.println("ì˜¤ í˜„ëª…í•œ ì„ íƒì„ í•˜ì…¨êµ°ìš” ì•ìœ¼ë¡œ ì˜í•´ë´…ì‹œë‹¤.");
+				System.out.println("¿À Çö¸íÇÑ ¼±ÅÃÀ» ÇÏ¼Ì±º¿ä ¾ÕÀ¸·Î ÀßÇØº¾½Ã´Ù.");
 				TimeUnit.SECONDS.sleep(1);
-				System.out.println("ê·¸ë¦¬ê³  ê°€ë°© ì•ˆì— ìˆëŠ” ë¬¼ì„ ë†“ê³  ì£½ìœ¼ì‹œì£ ã…ã…");
+				System.out.println("±×¸®°í °¡¹æ ¾È¿¡ ÀÖ´Â ¹°À» ³õ°í Á×À¸½ÃÁÒ¤¾¤¾");
 				TimeUnit.SECONDS.sleep(1);
-				System.out.println("ì‹œìŠ¤í…œ : ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤. ìˆ«ìê°€ 1000ê°€ ë ë•Œê¹Œì§€ ê¸°ë‹¤ë¦¬ì„¸ìš”");
+				System.out.println("½Ã½ºÅÛ : ´ç½ÅÀº Á×¾ú½À´Ï´Ù. ¼ıÀÚ°¡ 1000°¡ µÉ¶§±îÁö ±â´Ù¸®¼¼¿ä");
 				TimeUnit.SECONDS.sleep(1);	
 				int b = 1;
 			
@@ -36,11 +36,11 @@ class java_1 {
 				} 
 			}else {
 				TimeUnit.SECONDS.sleep(1);
-				System.out.println("í•˜..ì–´ì´ê°€ì—†ë„¤ ê°€ë°©ì†ì— ìˆëŠ” ë¬¼ì„ ë³´ê³  êµ¬í•´ì¤¬ëŠ”ë°");
+				System.out.println("ÇÏ..¾îÀÌ°¡¾ø³× °¡¹æ¼Ó¿¡ ÀÖ´Â ¹°À» º¸°í ±¸ÇØÁá´Âµ¥");
 				TimeUnit.SECONDS.sleep(1);
-				System.out.println("ê·¸ëƒ¥ ì£½ì–´ì•¼ê² ë‹¤");
+				System.out.println("±×³É Á×¾î¾ß°Ú´Ù");
 				TimeUnit.SECONDS.sleep(1);
-				System.out.println("ì‹œìŠ¤í…œ : ë‹¹ì‹ ì€ ì£½ì—ˆìŠµë‹ˆë‹¤. ìˆ«ìê°€ 1000ê°€ ë ë•Œê¹Œì§€ ê¸°ë‹¤ë¦¬ì„¸ìš”");
+				System.out.println("½Ã½ºÅÛ : ´ç½ÅÀº Á×¾ú½À´Ï´Ù. ¼ıÀÚ°¡ 1000°¡ µÉ¶§±îÁö ±â´Ù¸®¼¼¿ä");
 				TimeUnit.SECONDS.sleep(1);
 				int b = 1;
 				
