@@ -17,7 +17,7 @@ class hotel {
 				result[T-1] = first + last;
 				System.out.println(result[T-1]);
 			}else {
-				System.out.println("ºÒ°¡´ÉÇÑ ¼ö½ÄÀÔ´Ï´Ù.");
+				System.out.println("ë¶ˆê°€ëŠ¥í•œ ìˆ˜ì‹ì…ë‹ˆë‹¤..");
 				break num;
 			}
 			T--;
