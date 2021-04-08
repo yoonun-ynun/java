@@ -1,12 +1,20 @@
 import java.util.*;
-class hotel {
+class Cal{
+	int good;
+	int[] res = new int[good];
+	void a(){
+		for(int t=good;t>0;t--)
+			System.out.println(res[good-1]);
+	}
+}
+class Main {
 	public static void main(String[] args) {
-		int T;
+		Cal cal = new Cal();
 		Scanner scanner = new Scanner(System.in);
 		String input = scanner.nextLine();
-		T = Integer.parseInt(input);
+		int T = Integer.parseInt(input);
+		cal.good = T;
 		int[] result = new int [T];
-		num:
 		while(T>0){
 			int Hei = scanner.nextInt();
 			int Wei = scanner.nextInt();
@@ -15,12 +23,11 @@ class hotel {
 				int first = Num/Hei+1;
 				int last = Num%Hei*100;
 				result[T-1] = first + last;
-				System.out.println(result[T-1]);
-			}else {
-				System.out.println("불가능한 수식입니다.");
-				break num;
+                System.out.println(result[T-1]);
+				cal.res[T-1] = result[T-1];
 			}
 			T--;
 		}
+		cal.a();
 	}
 }
