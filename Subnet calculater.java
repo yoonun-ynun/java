@@ -111,16 +111,16 @@ class Main {
         }else{
             for(int i = 0;i<quo;i++)
                 System.out.printf(stip[i] + ".");
-            System.out.printf("%d" + ".", netres);
+            System.out.printf("%d" , netres);
             for(int i = 4-quo;2<i;i--)
                 System.out.printf("." + "%d",0);
-            System.out.printf("%d" + " ~ ", 1);
+            System.out.printf("." + "%d" + " ~ ", 1);
             for(int i = 0;i<quo;i++)
                 System.out.printf(stip[i] + ".");
-            System.out.printf("%d" + ".", broadres);
+            System.out.printf("%d", broadres);
             for(int i = 4-quo;2<i;i--)
                 System.out.printf("." + "%d", 255);
-            System.out.printf("%d", 254);
+            System.out.printf("." + "%d", 254);
         }
     }
 }
