@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Main {
+public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         arraypharse ap = new arraypharse();
@@ -19,11 +19,11 @@ class Main {
             int ze = (int)Math.pow(2, i);
             if (soip - ze >= 0 && su > 0){
                 soip = soip - ze;
-            two[i] = 1;
-        }else if (soip - ze < 0 && su > 0)
-            two[i] = 0;
-        su--;
-    }
+                two[i] = 1;
+            }else if (soip - ze < 0 && su > 0)
+                two[i] = 0;
+            su--;
+        }
         int netres = 0;
         int broadres = 0;
         int[] copy = new int[8];
