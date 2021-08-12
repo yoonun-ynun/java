@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         arraypharse ap = new arraypharse();
         String ip = sc.nextLine();
@@ -9,60 +9,21 @@ class Main {
         int subnet = sc.nextInt();
         String[] stip = repip.split(",");
         int[] reip = ap.stoi(stip);
-        int su = subnet%8;
-        int quo = subnet/8;
+        int su = subnet % 8;
+        int quo = subnet / 8;
         int[] two = new int[8];
-        for(int i = 0;i<two.length;i++)
+        for (int i = 0; i < two.length; i++)
             two[i] = 2;
         int soip = reip[quo];
-        if(soip-128>=0&&su>0){
-            soip = soip-128;
-            two[7] = 1;
-        }else if(soip-128<0&&su>0)
-            two[7] = 0;
+        for (int i = 7; i >= 0; i--) {
+            int ze = (int)Math.pow(2, i);
+            if (soip - ze >= 0 && su > 0){
+                soip = soip - ze;
+            two[i] = 1;
+        }else if (soip - ze < 0 && su > 0)
+            two[i] = 0;
         su--;
-        if(soip-64>=0&&su>0){
-            soip = soip-64;
-            two[6] = 1;
-        }else if(soip-64<0&&su>0)
-            two[6] = 0;
-        su--;
-        if(soip-32>=0&&su>0){
-            soip = soip-32;
-            two[5] = 1;
-        }else if(soip-32<0&&su>0)
-            two[5] = 0;
-        su--;
-        if(soip-16>=0&&su>0){
-            soip = soip-16;
-            two[4] = 1;
-        }else if(soip-16<0&&su>0)
-            two[4] = 0;
-        su--;
-        if(soip-8>=0&&su>0){
-            soip = soip-8;
-            two[3] = 1;
-        }else if(soip-8<0&&su>0)
-            two[3] = 0;
-        su--;
-        if(soip-4>=0&&su>0){
-            soip = soip-4;
-            two[2] = 1;
-        }else if(soip-4<0&&su>0)
-            two[2] = 0;
-        su--;
-        if(soip-2>=0&&su>0){
-            soip = soip - 2;
-            two[1] = 1;
-        }else if(soip-2<0&&su>0)
-            two[1] = 0;
-        su--;
-        if(soip-1>=0&&su>0){
-            soip = soip-1;
-            two[0] = 1;
-        }else if(soip-1<0&&su>0)
-            two[0] = 0;
-        su--;
+    }
         int netres = 0;
         int broadres = 0;
         int[] copy = new int[8];
